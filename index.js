@@ -11,6 +11,8 @@ app.use(cors())
 app.use(express.json())
 app.use('/post', postRouter)
 
+require('dotenv').config()
+
 const port = process.env.PORT || 4444
 
 const start = async()=>{
