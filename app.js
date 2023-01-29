@@ -23,7 +23,9 @@ app.use(express.json())
 
 app.use('/', SignupRouter)
 
-const port =  8800
+
+require('dotenv').config()
+const port = process.env.PORT || 8800
 
 const start = async()=>{
   await connectDB()
