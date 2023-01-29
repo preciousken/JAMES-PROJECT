@@ -8,6 +8,7 @@ app.get('/',(req,res)=>{
   welcome:'Welcome to the base URL'
  })
 })
+require('dotenv').config()
 
 // middlewares
 app.use(express.json())
