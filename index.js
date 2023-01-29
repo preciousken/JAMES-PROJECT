@@ -2,6 +2,8 @@ const express = require('express');
 const { connectDB } = require('./db/connect');
 const cors = require('cors')
 const app = express();
+
+require('dotenv').config()
 // importing of the routers
 const profileRouter = require('./router/approveProfile')
 
